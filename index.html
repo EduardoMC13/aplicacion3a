@@ -1,0 +1,250 @@
+ <!doctype html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>Tercera Aplicacion</title>
+ 
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/temas4g.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js" type="text/javascript"></script>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+  </head>
+ 
+  <body onLoad="MM_preloadImages('imagenes/popocatepelt2.jpg','imagenes/c3.jpg')">
+  <div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Volcanes De Mexico</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+  <div>
+  <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:960px;height:170px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+  </div>
+  </div>
+  
+<div>
+  <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Volcan Popocatépetl</h2>
+  <p>Datos Generales</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+ <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Volcan De Colima</h2>
+  <p>Datos Generales</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>En Caso De Caida De Ceniza Volcanica </h2>
+  <p>Medidas De Prevencion</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>En Caso De Erupcion Volcanica</h2>
+  <p>Medidas De Prevencion</p>
+  </a>
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+  <div>
+  <h4>Aplicacion Tres</h4>
+  <h4>Volcanes De Mexico</h4>
+  <h4>EMC</h4>
+  </div>
+  </div>
+  </div>
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Volcan Popocatepelt</h1>
+  </div>
+  <div data-role="content">
+  <center>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/popocatepelt2.jpg',1)"><img src="imagenes/popocatepelt.JPG" width="266" height="215" id="Image4"></a>
+   </center>
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Datos Generales</h1>
+   
+  <div>
+  <p><b> Volcán:</b> Popocatépetl</p>	 <p><b> Localización: </b>19.02º N, 98.62º W</p>
+ <p><b> Tipo:</b>  Estratovolcán Andesítico-Dacítico</p>	 <p><b> Altura:</b> 5,452 msnm</p>
+ <p><b> Diámetro mayor del cráter:</b> 900m</p>	 <p><b> Profundidad del cráter:</b> 150m (desde labio inferior)</p> <p><b> Área del edificio volcánico:</b> 500 km2</p>	 <p><b> Ubicacion:</b> 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala</p>
+<p><b> Última erupción:</b> 28 de marzo de 2016</p>
+ </div>
+ </div>
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Dependencias Que Lo Monitorean</h1>
+   <p>Clic en la imagen para ir al sitio oficial de CENAPRED</p>
+   <div>
+   <center><a href="http://ww1.cenapred.com/"><img src="imagenes/cenapred.jpg" width="70%" height="34%"></a></center></div>
+   <p>La única manera de percibir y evaluar el estado de actividad y riesgo asociado de un volcán, es a través de la observación y vigilancia sistemática mediante diversos métodos visuales e instrumentales. Si estos se aplican en forma anticipada en las fases previas a un proceso eruptivo, es posible, en la mayoría de los casos, detectar oportunamente un cambio cualitativo y cuantitativo de la actividad que inclusive pudiese conducir a una predicción en el corto plazo de un proceso eruptivo inminente y poner en marcha, de parte de las autoridades de Protección Civil el plan de emergencia previamente establecido.</p><p> Una muestra de un sistema de vigilancia y monitoreo oportunamente establecido es el del volcán Popocatépetl. En un esfuerzo conjunto del Centro Nacional de Prevención de Desastres (CENAPRED), de la Secretaría de Gobernación, los Institutos de Geofísica y de Ingeniería , de la UNAM , y con la colaboración del Cascades Volcano Observatory, del U.S. Geological Survey, se estableció en los últimos años un complejo sistema de observación telemétrico con una central de adquisición y procesamiento de datos.</p>
+   </div>
+ </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Aplicacion tres</h4>
+  <h4>Volcan Popocatepelt	</h4>
+  <h4>EMC</h4>
+  </div>
+  </div>
+ 
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Volcan De Colima</h1>
+  </div>
+  <div data-role="content">
+  <center>
+   
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/c3.jpg',1)"><img src="imagenes/c1.jpg" width="311" height="171" id="Image5"></a>
+   </center>
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Datos Generales</h1>
+   
+  <div>
+  <p><b>Volcán:</b> De Colima O De Fuego :</p>	 <p><b>Localización:</b>103°33'20" y 103°40'40" de longitud oeste y 19°28'07" y 19°36'20" de latitud norte </p>
+ <p><b>Tipo:</b>Estratovolcan</p>	 <p><b>Altura:</b>3940 msnm. </p>
+ <p><b>Diámetro mayor del cráter:.</b>300 metros</p>	 <p><b>Profundidad del cráter: </b>120 metros.</p> 
+ <p><b>Área del edificio volcánico:</b>3850 Metros. </p>	 
+ <p><b>Ubicacion:</b> en el estado de Jalisco, en el occidente de la República Mexicana. </p>
+<p><b> Última erupción:</b> 11 julio de 2015</p>
+  </div>
+  </div>
+ 
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Dependencias Que Lo Monitorean</h1>
+   <p class="ui-android-2x-fixed"><em>Clic en la imagen para ir al sitio oficial de CENAPRED</em></p>
+   <div>
+   <center><a href="http://ww1.cenapred.com/"><img src="imagenes/cenapred.jpg" width="56%" height="30%"></a></center></div>
+   <p>Cuatro tipos de monitoreo se han establecido en el volcán: visual, sísmico, geodésico y geoquímico, de los cuales el más importante es el sísmico. La red de monitoreo del Volcan de Colima está compuesta por 15 estaciones localizadas en las laderas circundantes del volcán en sitios con altitudes de hasta 4300 m y a 1.5 km del cráter. La instrumentación consta de 8 sismógrafos triaxiales de periodo corto, 4 de banda ancha, 4 inclinómetros biaxiales para medir deformación, una cámara de video con enlace de microondas, un radar doppler meteorológico y diversos equipos para mediciones geodésicas, análisis químicos y determinación de las concentraciones de gases SO2 y CO2. Más de 50 señales de telemetría son trasmitidas en forma continua hacia un puesto central de registro y procesamiento localizado en el CENAPRED.</p>
+   <p> Allí y mediante una extensa red de computadoras, la actividad es monitoreada y procesada las 24 horas del día. Al detectarse cualquier incremento anormal de la actividad sísmica del volcán, se activa un sistema de alarma acústica y a través de un sistema de marcado automático se envian mensajes a teléfonos particulares celulares y localizadores del personal de guardia . Del análisis de la información, las recomendaciones relativas al nivel de alertamiento son tomadas por el Comité Técnico Científico Asesor, integrado por eminentes investigadores de la UNAM y del CENAPRED. Mediante reportes especiales, autoridades del gobierno y de Protección Civil son informadas periódicamente acerca del nivel de actividad del volcán. Para el público en general se dispone de un buzón telefónico con mensajes sobre su estado de actividad.</p>
+   </div>
+   </div>
+  <div data-role="footer" data-theme="a">
+  <h4>Aplicacion tres</h4>
+  <h4>Volcan De Colima</h4>
+  <h4>EMC</h4>
+  </div>
+  </div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1> En Caso De Ceniza Volcanica</h1>
+   </div>
+ <div data-role="content" >
+  <div>
+    
+     <center> <img src="imagenes/mp.jpg" width="65%" height="38%"></center>
+      <ul>
+      <li>No realices actividades al aire libre y si es posible no salgas.</li><br>
+      <li>Cierra puertas y ventanas y coloca toallas o trapos húmedos en las rendijas</li><br>
+      <li>Si tienes que salir cúbrete con un pañuelo o tapabocas, limpia ojos y garganta con agua pura</li><br>
+      <li>Para los ojos, usa lentes protectores, especialmente si usas lentes de contacto.</li><br>
+      <li>Cubre tinacos, cisternas y depósitos de agua</li><br>
+      <li>Barre y retira la ceniza de techos, azoteas, patios y calles, deposítalas en bolsas y no permitas que se vaya al drenaje.</li><br>
+      <li>Ante la caída de ceniza volcánica evita consumir alimentos en la vía pública.</li><br>
+      <li>Si permaneces expuesto por algún tiempo a las cenizas volcánicas, al ingresar a tu casa se recomienda cambiar de ropa</li><br>
+      <li>Si es posible no conduzcas, si tienes que hacerlo, hazlo a baja velocidad y con las luces encendidas, ya que la ceniza dificulta la visibilidad y provoca que el pavimento se vuelva resbaloso.</li><br>
+      <li>Usa las vías de comunicación solo en caso de ser necesario</li>
+      </ul>
+       <div>
+    <center> <img src="imagenes/Ceniza.jpg" width="63%" height="27%"></center>
+    </div>
+  </div>
+  </div>
+ <div data-role="footer" data-theme="a">
+    <h4>Aplicacion tres</h4>
+  <h4>Volcan Popocatepelt</h4>
+  <h4>EMC</h4>
+  </div>
+ </div>
+</div>
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1> En Caso De Erupcion Volcanica</h1>
+   </div>
+ <div data-role="content" >
+  <div>
+    <center> <img src="imagenes/mp.jpg" width="63%" height="27%"></center>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+   <h1>Antes de una erupción Volcanica</h1>
+      <ul>
+      <li>Conoce el mapa de los peligros volcánicos que te pueden afectar. Allí se delimitan las zonas de alto, mediano y bajo riesgo.</li><br>
+      <li>Conoce las rutas de evacuación y ten previstas la posibilidad de alojarte temporalmente en casa de un familiar o amigo que no viva en la zona de riesgo.</li><br>
+      <li>Haz conocer a tu familia este sitio de encuentro. Si se presenta la posibilidad de que ocurra una erupción y puedes verte afectado, probablemente la única medida de prevención correcta sea evacuar.</li><br>
+      <li>Ten a la mano tus documentos de valor (identificaciones, títulos de propiedad, cartillas, etc.)</li><br>
+      <li>Mantén un maletín de primeros auxilios, un radio de pilas, una linterna en buen estado y pilas o baterías de reserva.</li>
+      </ul>
+       <div>
+    <center> <img src="imagenes/erupcion.jpg" width="54%" height="27%"></center>
+    </div>
+  </div>
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Durante una erupción Volcanica</h1>
+      <ul>
+      <li>Ante todo conserva la calma; el pánico puede producir más víctimas que el fenómeno natural.</li><br>
+      <li>Reúne rápidamente a tu familia, especialmente a los niños y ancianos, quienes son las personas más vulnerables en estos momentos.</li><br>
+      <li>Si estás fuera de casa no intentes ingresar a la zona de riesgo, desplázate hacia lugares alejados del volcán.</li><br>
+      <li>Debido a que las explosiones del volcán pueden causar ondas de aire o de choque que pueden romper los vidrios de las ventanas, coloca cintas adhesivas en forma de X, o en último caso pon tablas que impidan la caída violenta de los mismos.</li><br>
+      <li>Si fuiste evacuado y te encuentras en un albergue, mantén la calma, recibirás alimentos, atención médica, etc. Además, podrás participar en las labores de mantenimiento del mismo</li>
+      </ul>
+       <div>
+    <center> <img src="imagenes/erupcion1.jpg" width="56%" height="27%"></center>
+    </div>
+  </div>
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Después de una erupción Volcanica</h1>
+      <ul>
+      <li>Permanece en el sitio seguro hasta las autoridades te informen que ha vuelto la normalidad. ¡No trates de regresar antes a tu hogar!.</li><br>
+      <li>No comas ni bebas ningún alimento que sospeches se encuentre contaminado.</li><br>
+      <li>Elimina la acumulación del material volcánico caído sobre los techos ya que por el peso éstos pueden derrumbarse. Este riesgo crece si se presentan lluvias porque el agua aumenta el peso de los materiales sobre los techos (un metro cúbico de ceniza húmeda puede llegar a pesar más de una tonelada).</li><br>
+      <li>Evita hacer uso de líneas telefónicas, caminos, transportes, servicios médicos y hospitalarios si no es estrictamente necesario. Muchas personas pueden necesitarlos con real urgencia.</li><br>
+      <li>Mantén en sintonía tu radio para recibir instrucciones.</li>
+      </ul>
+      <div>
+    <center> <img src="imagenes/erupcion2.jpg" width="59%" height="27%"></center>
+    </div>
+  </div>
+  </div>
+  
+ <div data-role="footer" data-theme="a">
+   <h4>Aplicacion tres</h4>
+  <h4>Volcan Popocatepelt</h4>
+  <h4>EMC</h4>
+  </div>
+ </div>
+</div>
+
+</body>
+</html>
